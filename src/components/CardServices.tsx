@@ -1,10 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 
 type CardServicesProps= {
-    image : String | null,
-    title : String | null,
-    description : String | null,
+    image : string | StaticImport,
+    title : string | null,
+    description : string | null,
 }
 
 function CardServices({image, title, description } : CardServicesProps) {
@@ -12,10 +13,10 @@ function CardServices({image, title, description } : CardServicesProps) {
     <div className='px-12 py-6 bg-[#20272F] hover:bg-[#2AD883] text-white mx-10 rounded-md'>
         <div className='flex items-center'>
             <Image
-                src=""
+                src={image}
                 alt=''
-                width={20}
-                height={20}
+                width={40}
+                height={40}
             />
             <h3 className='font-bold ms-2'>{title}</h3>
         </div>
