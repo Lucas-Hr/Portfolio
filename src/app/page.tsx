@@ -3,6 +3,7 @@ import Intro from "@/components/Intro";
 import AboutMe from "@/components/AboutMe";
 import Services from "@/components/Services";
 import Tools from "@/components/Tools";
+import Projects from "@/components/Projects";
 export default function Home() {
   return (
     <div>
@@ -11,7 +12,7 @@ export default function Home() {
       <Services />
       <Tools />
       {/* Add more components as needed */}
-      {/* <Projects /> */}
+      <Projects />
       {/* <Contact /> */}
     </div>
   );
