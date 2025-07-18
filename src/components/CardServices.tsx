@@ -20,7 +20,7 @@ function CardServices({image, title, description } : CardServicesProps) {
             />
             <h3 className='font-bold ms-2'>{title}</h3>
         </div>
-        <p className='text-[#686868] font-thin'>{description}</p>
+        <p className='text-[#686868] '>{description}</p>
     </div>
   )
 }

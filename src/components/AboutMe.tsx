@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 function AboutMe() {
   return (
-    <div className='flex justify-between items-center bg-[#20272F] px-52 py-20 h-screen'>
+    <div className='flex justify-between items-center bg-[#20272F] px-52 py-20 h-screen' id='about'>
         <div className='w-1/2'>
             <Image
                 src="/AboutMe.svg"
@@ -30,6 +30,10 @@ function AboutMe() {
                    into website using JavaScript language especially in React and Express framework.
                 </p>
             </div>
+            <button className='bg-[#2AD883] text-black px-8 py-2 rounded-md cursor-pointer mt-4 flex items-center hover:bg-[#1f9b6c] transition-colors'>
+              <Image src='/download.svg' alt='downloadCV' width={20} height={20}/>
+              <span className='ms-2 '>Download my CV</span>
+            </button>
         </div>
     </div>
   )
