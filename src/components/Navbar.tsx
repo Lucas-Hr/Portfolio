@@ -3,21 +3,21 @@ import links from "@/data/Link"
 
 export default function Navbar () {
   return (
-    <div className="flex items-center w-full fixed px-52 py-5 justify-between">
+    <div className="flex items-center w-full fixed px-52 py-5 justify-between z-20">
         <div className="text-[#2AD883] font-extrabold tracking-[10px]">
             LHR
         </div>
         <div className="flex items-center">
             {
-                links.map((link) => {
+                links.map((link,index) => {
                     return (
                         <Link
-                            key={link}
-                            href={link}
-                            id={link}
-                            className="text-[#767572] font-light me-6 hover:font-bold hover:text-white"
+                            key={index}
+                            href={link.href}
+                            
+                            className="text-[#767572] font-light ms-2 px-8 transition duration-150 ease-in-out hover:text-white  hover:transition hover:ease-in-out hover:duration-150" 
                          >
-                        {link}
+                        {link.name}
                     </Link>
                     )
 
