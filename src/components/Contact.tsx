@@ -4,13 +4,21 @@ import { Github, Facebook, Linkedin} from 'lucide-react';
 import React from 'react'
 import Image from 'next/image'
 import contactData from '@/data/ContactData'
-import socialData from '@/data/SocialData'
+import { motion } from 'framer-motion';
 const Contact = () => {
   return (
     <div className='bg-[#060606] px-10 md:px-30 py-20' id='contact'>
-        <h2 className='text-lg  md:text-2xl text-[#2AD883] font-bold'>Contact me</h2>
+        <motion.h2 
+        initial={{ opacity: 0, x: 200 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+        className='text-lg  md:text-2xl text-[#2AD883] font-bold'>Contact me</motion.h2>
         <div className='flex flex-col justify-between'>
-            <div className='mt-4'>
+            <motion.div 
+            initial={{ opacity: 0, x: 200 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className='mt-4'>
             {contactData.map((c, index) => {
                 return(
                     <div className='flex items-center mt-4' key={index}>
@@ -19,15 +27,13 @@ const Contact = () => {
                     </div>
                 )
             })}
-            </div>
-            <div className='mt-8 flex '>
-            {/* {socialData.map((s, index) => {
-                return(
-                    <div className='flex items-center me-4' key={index}>
-                        <Image src={s.imageUrl} width={25} height={25} alt='icon'/>
-                    </div>
-                )
-            })} */}
+            </motion.div>
+            <motion.div 
+                initial={{ opacity: 0, x: 200 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 1 }}
+                className='mt-8 flex '
+            >
                 <Link href='https://github.com/Lucas-Hr' target='_blank'>
                     <Github className='text-[#2AD883] cursor-pointer' />
                 </Link>
@@ -37,7 +43,7 @@ const Contact = () => {
                 <Link href='https://web.facebook.com/lukass.entsu' target='_blank'>
                     <Facebook className='text-[#2AD883] cursor-pointer ms-8' />
                 </Link> 
-            </div>
+            </motion.div>
         </div>
         
     </div>
