@@ -65,6 +65,7 @@ function AboutMe() {
             initial={{ opacity: 0, x: 200 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 1.5 }}
+            viewport={{ once: true }}
             className='text-sm bg-[#2AD883] text-black px-4 py-2 rounded-md cursor-pointer mt-4 flex items-center hover:bg-[#1f9b6c] transition-colors' onClick={() => downloadCV()}>
               <Image src='/download.svg' alt='downloadCV' width={20} height={20}/>
               <span className='ms-2 '>Download my CV</span>
