@@ -10,17 +10,17 @@ type CardServicesProps= {
 
 function CardServices({image, title, description } : CardServicesProps) {
   return (
-    <div className='px-12 py-6 bg-[#20272F] hover:bg-[#2AD883] text-white mx-10 rounded-md'>
+    <div className='px-12 py-6 bg-[#20272F] cursor-pointer text-white rounded-md mt-4 md:mx-4 transition-colors duration-300 ease-in-out'>
         <div className='flex items-center'>
             <Image
                 src={image}
                 alt=''
-                width={40}
-                height={40}
+                width={30}
+                height={30}
             />
-            <h3 className='font-bold ms-2'>{title}</h3>
+            <h3 className='font-bold ms-2 text-md'>{title}</h3>
         </div>
-        <p className='text-[#686868] '>{description}</p>
+        <p className='text-[#686868] text-sm mt-2 '>{description}</p>
     </div>
   )
 }
