@@ -10,7 +10,7 @@ export default function Navbar () {
     <>
         {
                 isVisible &&
-                <div className="md:hidden h-screen flex flex-col justify-center bg-[#20272F] absolute top-0 py-4 z-30 w-full">
+                <div className="md:hidden h-screen flex flex-col justify-center bg-[#171C22] absolute top-0 right-0 bottom-0 left-0 py-4 z-30 w-screen fixed">
                     <span className="text-white text-4xl right-10 absolute top-10 font-thin cursor-pointer" onClick={() => setIsVisible(false)}>&times;</span>
                     {
                         links.map((link,index) => {
@@ -18,7 +18,7 @@ export default function Navbar () {
                                 <Link
                                     key={index}
                                     href={link.href}
-
+                                    onClick={() => setIsVisible(false)}
                                     className="text-center text-[#767572] text-sm font-light transition duration-150 ease-in-out hover:text-white  hover:transition hover:ease-in-out hover:duration-150 my-3"
                                 >
                                 {link.name}
@@ -29,7 +29,7 @@ export default function Navbar () {
                     }
                 </div>
             }
-        <div className="flex items-center w-full fixed px-10 md:px-30 py-5 justify-between z-20">
+        <div className="flex items-center w-screen fixed px-10 md:px-30 py-5 justify-between z-20 ">
             <div className="text-[#2AD883] font-extrabold tracking-[10px] text-sm md:text-lg">
                 LHR
             </div>
@@ -53,7 +53,7 @@ export default function Navbar () {
                 }
             </div>
 
-            <div className="md:hidden flex items-center">
+            <div className="md:hidden z-40">
                 <Menu className="text-[#2AD883] cursor-pointer" onClick={() => setIsVisible(true)}/>
             </div>
 

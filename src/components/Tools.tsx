@@ -1,14 +1,28 @@
+'use client'
+
 import React from 'react'
 import tools from '@/data/ToolsData'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 function Tools() {
   return (
     <div className='bg-[#20272F] md:px-30 px-10 py-20 h-1/2' id='tools'>
-        <h2 className='text-lg md:text-2xl text-[#2AD883] font-bold text-center'>Tools</h2>
-        <div className='mt-2 flex flex-col'>
+        <motion.h2 
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }} 
+        className='text-lg md:text-2xl text-[#2AD883] font-bold text-center'>Tools
+        </motion.h2>
+        <div       
+        className='mt-2 flex flex-col'>
             {tools.map((tool,index) => {
                 return (
-                    <div key={index} className='flex flex-wrap rounded-sm md:px-10 md:py-2 bg-[#171C22] md:grow m-4'>
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 ,delay: 0.5}}  
+                        key={index} 
+                        className='flex flex-wrap rounded-sm md:px-10 md:py-2 bg-[#171C22] md:grow m-4'>
                         
                         {tool.items.map((item, idx) => {
                             return (
@@ -18,7 +32,7 @@ function Tools() {
                                 </div>
                             )})
                         }
-                    </div>
+                    </motion.div>
                 )
             })}
         </div>
