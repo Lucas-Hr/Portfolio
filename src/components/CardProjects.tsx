@@ -12,7 +12,7 @@ type CardProps = {
 
 function CardProjects({imageUrl, title, description, link, stack}: CardProps) {
   return (
-    <div className='h-full'>
+    <div className='h-full pb-12'>
         <Image
           src={imageUrl}
           alt={title}

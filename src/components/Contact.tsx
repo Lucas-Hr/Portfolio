@@ -9,14 +9,16 @@ const Contact = () => {
   return (
     <div className='bg-[#060606] px-10 md:px-30 py-20' id='contact'>
         <motion.h2 
-        initial={{ opacity: 0, x: 200 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.5 }}
         className='text-lg  md:text-2xl text-[#2AD883] font-bold'>Contact me</motion.h2>
         <div className='flex flex-col justify-between'>
             <motion.div 
-            initial={{ opacity: 0, x: 200 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y : 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.5 }}
             className='mt-4'>
             {contactData.map((c, index) => {
@@ -29,8 +31,9 @@ const Contact = () => {
             })}
             </motion.div>
             <motion.div 
-                initial={{ opacity: 0, x: 200 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 1 }}
                 className='mt-8 flex '
             >

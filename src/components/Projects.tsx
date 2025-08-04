@@ -3,9 +3,11 @@ import React, { useEffect, useState } from 'react'
 import CardProjects from './CardProjects'
 import projectsData from '@/data/ProjectsData'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination,Navigation } from 'swiper/modules'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css'
+import '../components/styles.css'
 import {motion} from 'framer-motion'
 function Projects() {
   const [deviceWidth, setDeviceWidth] = useState(0);
@@ -32,12 +34,14 @@ function Projects() {
         <motion.h2
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5}}   
             className='text-lg md:text-2xl text-[#2AD883] font-bold text-center'>Projects</motion.h2>
             <motion.div
             
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.5 }}
             >
                 <Swiper
@@ -45,6 +49,11 @@ function Projects() {
                 slidesPerView={deviceWidth < 1280 ? 1 : 3}
                 className="mySwiper mt-10 cursor-grab"
                 loop={true}
+                modules={[Pagination ]}
+                pagination={{
+                    clickable: true,
+                    
+                }}
                 >
                   {
                       projectsData.map((project, index) => (
@@ -66,10 +75,3 @@ function Projects() {
   )
 }
 export default Projects
-
-// Add this CSS to your global CSS file or in a <style jsx global> block if using Next.js
-/*
-.custom-swiper-pagination {
-  --swiper-pagination-color: #00FF00;
-}
-*/

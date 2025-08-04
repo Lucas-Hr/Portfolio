@@ -1,0 +1,19 @@
+.swiper-pagination {
+  bottom: 10px !important; /* Position from bottom */
+  text-align: center;
+  margin-top: 50px;      /* Horizontal center */
+}
+
+.swiper-pagination-bullet {
+  background-color: #527c69;    /* Bullet color */
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  width: 12px;              /* Bullet width */
+  height: 12px;             /* Bullet height */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #2AD883; /* Active bullet color (e.g., red-400) */
+  opacity: 1;
+}
+

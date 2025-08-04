@@ -16,8 +16,9 @@ function AboutMe() {
     <div className='flex flex-col md:flex-row justify-between items-center bg-[#20272F] md:px-30 px-10 py-20 ' id='about'>
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0}}
           transition={{ duration: 0.5}}
+          viewport={{ once: true }}
           className='md:w-1/2'>
             <Image
                 src="/about.png"
@@ -30,11 +31,13 @@ function AboutMe() {
             <motion.h2
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5}}
             className='md:text-2xl text-xl text-center text-[#2AD883] font-bold md:text-left mt-4 md:mt-0'>About me</motion.h2>
             <motion.div 
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.5 }}
             className='mt-2'>
                 <h3 className='text-md text-white font-bold md:text-lg'>Who am I?</h3>
@@ -48,6 +51,7 @@ function AboutMe() {
             <motion.div 
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 1 }}
               className='mt-6'>
                 <h3 className='text-md text-white font-bold md:text-lg'>What I do?</h3>

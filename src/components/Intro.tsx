@@ -11,6 +11,7 @@ const Intro = () => {
             <motion.h1 
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             className='text-white text-center text-bold text-lg md:text-2xl md:text-left'>
                I’m <span className='font-bold'>
@@ -21,6 +22,7 @@ const Intro = () => {
             <motion.h2            
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.5 }}
             className='text-[#767572] text-sm text-center md:text-left mt-2'>
                 I design website user interface for you and turn them into website <br /> using <span className='text-[#2AD883]'>JavaScript </span>language and its framework.
@@ -28,6 +30,7 @@ const Intro = () => {
             <motion.div
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 1}}
             className='flex items-center justify-evenly mt-6 md:justify-start'>
               <button className='text-sm bg-[#2AD883] text-black py-2 px-4 rounded-md cursor-pointer hover:bg-[#1f9b6c] transition-colors'>Hire me!</button>
@@ -40,6 +43,7 @@ const Intro = () => {
         <motion.div 
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.5 }}
         className='md:w-1/2 mt-10'>
           <Image 

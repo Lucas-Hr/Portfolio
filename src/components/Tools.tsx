@@ -10,6 +10,7 @@ function Tools() {
         <motion.h2 
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.5 }} 
         className='text-lg md:text-2xl text-[#2AD883] font-bold text-center'>Tools
         </motion.h2>
@@ -20,6 +21,7 @@ function Tools() {
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
                         transition={{ duration: 0.5 ,delay: 0.5}}  
                         key={index} 
                         className='flex flex-wrap rounded-sm md:px-10 md:py-2 bg-[#171C22] md:grow m-4'>
