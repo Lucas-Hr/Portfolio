@@ -1,11 +1,15 @@
 'use client'
-
+import React, { useContext } from 'react'
 import { Menu } from "lucide-react"
 import Link from "next/link"
 import links from "@/data/Link"
 import { useState } from "react"
+import { LangContext } from "@/context/LangContext"
+
+import Image from 'next/image'
 export default function Navbar () {
     const [isVisible, setIsVisible] = useState<boolean>(false);
+    const { lang, toggleLang } = useContext(LangContext);
   return (
     <>
         {
@@ -21,7 +25,7 @@ export default function Navbar () {
                                     onClick={() => setIsVisible(false)}
                                     className="text-center text-[#767572] text-sm font-light transition duration-150 ease-in-out hover:text-white  hover:transition hover:ease-in-out hover:duration-150 my-3"
                                 >
-                                {link.name}
+                                {lang === 'english' ? link.nameEnglish : link.nameFrench}
                             </Link>
                             )
 
@@ -29,36 +33,38 @@ export default function Navbar () {
                     }
                 </div>
             }
-        <div className="flex items-center w-screen fixed px-10 md:px-30 py-5 justify-between z-20 bg-[#171C22] ">
+        <div className="flex  items-center w-screen fixed px-10 md:px-30 py-5 justify-between z-20 bg-[#171C22] ">
             <div className="text-[#2AD883] font-extrabold tracking-[10px] text-sm md:text-lg">
                 LHR
             </div>
-            
-            
-            <div className="flex items-center right-[80px] z-10 hidden md:flex">
-                {
-                    links.map((link,index) => {
-                        return (
-                            <Link
-                                key={index}
-                                href={link.href}
-                                
-                                className="md:text-sm text-[#767572] font-light ms-2 md:px-2 lg:px-8 transition duration-150 ease-in-out hover:text-white  hover:transition hover:ease-in-out hover:duration-150 my-3 md:my-0" 
-                            >
-                            {link.name}
-                        </Link>
-                        )
 
-                    })
-                }
+            <div className='flex'>
+                
+                <div className="flex items-center right-[80px] z-10 hidden md:flex">
+                    {
+                        links.map((link,index) => {
+                            return (
+                                <Link
+                                    key={index}
+                                    href={link.href}
+                                    
+                                    className="md:text-sm text-[#767572] font-light ms-2 md:px-2 lg:px-8 transition duration-150 ease-in-out hover:text-white  hover:transition hover:ease-in-out hover:duration-150 my-3 md:my-0" 
+                                >
+                                {lang === 'english' ? link.nameEnglish : link.nameFrench}
+                            </Link>
+                            )
+
+                        })
+                    }
+                </div>
+                <div className='cursor-pointer' onClick={toggleLang}>
+                    <Image src={lang === 'english' ? '/USA.svg' : '/FRA.svg'} alt="Language" width={25} height={25} className='me-2'/>
+                </div>
+                
+                <div className="md:hidden z-40">
+                    <Menu className="text-[#2AD883] cursor-pointer" onClick={() => setIsVisible(true)}/>
+                </div>
             </div>
-
-            <div className="md:hidden z-40">
-                <Menu className="text-[#2AD883] cursor-pointer" onClick={() => setIsVisible(true)}/>
-            </div>
-
-            
-
         </div>
     </>
   )
