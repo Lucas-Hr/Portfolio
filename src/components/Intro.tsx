@@ -18,7 +18,7 @@ const Intro = () => {
             className='text-white text-center text-bold text-lg md:text-2xl md:text-left'>
              { lang === 'english' ? (
                <>
-                I’m <span className='font-bold'>
+                I&apos;m <span className='font-bold'>
                     <span className='text-[#2AD883]'>Lucas</span> Henintsoa Randriamiarisoa
                   </span>, <br />
                 a <span className='text-[#2AD883] font-bold'>Fullstack JavaScript Developer</span> 
