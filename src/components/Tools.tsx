@@ -4,7 +4,10 @@ import React from 'react'
 import tools from '@/data/ToolsData'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { LangContext } from '@/context/LangContext'
+import { useContext } from 'react'
 function Tools() {
+    const { lang } = useContext(LangContext);
   return (
     <div className='bg-[#20272F] md:px-30 px-10 py-20 h-1/2' id='tools'>
         <motion.h2 
@@ -12,7 +15,8 @@ function Tools() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }} 
-        className='text-lg md:text-2xl text-[#2AD883] font-bold text-center'>Tools
+        className='text-lg md:text-2xl text-[#2AD883] font-bold text-center'>
+            {lang === 'english' ? 'Tools I use' : 'Outils'}
         </motion.h2>
         <div       
         className='mt-2 flex flex-col'>

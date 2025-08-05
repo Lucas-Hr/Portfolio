@@ -1,27 +1,34 @@
 const links = [
     {
         href : '/',
-        name : 'Home'
+        nameEnglish : 'Home',
+        nameFrench : 'Accueil'
     },
     {
         href : '/#about',
-        name : 'About'
+        nameEnglish : 'About',
+        nameFrench : 'À propos'
     },
     {
         href : '/#services',
-        name : 'Services'
+        nameEnglish : 'Services',
+        nameFrench : 'Services'
     },
     {
         href : '/#tools',
-        name : 'Tools'
+        nameEnglish : 'Tools',
+        nameFrench : 'Outils'
+        
     },
     {
         href : '/#projects',
-        name : 'Projects'
+        nameEnglish : 'Projects',
+        nameFrench : 'Projets'
     },
     {
         href : '/#contact',
-        name : 'Contact'
+        nameEnglish : 'Contact',
+        nameFrench : 'Contact'
     },
 ]
 

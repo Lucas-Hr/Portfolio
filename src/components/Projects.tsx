@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState,useContext } from 'react'
 import CardProjects from './CardProjects'
 import projectsData from '@/data/ProjectsData'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -9,9 +9,10 @@ import 'swiper/css/pagination'
 import 'swiper/css'
 import '../components/styles.css'
 import {motion} from 'framer-motion'
+import { LangContext } from '@/context/LangContext'
 function Projects() {
   const [deviceWidth, setDeviceWidth] = useState(0);
-
+  const { lang } = useContext(LangContext);
   useEffect(() => {
     // Function to update the device width
     const handleResize = () => {
@@ -36,7 +37,9 @@ function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5}}   
-            className='text-lg md:text-2xl text-[#2AD883] font-bold text-center'>Projects</motion.h2>
+            className='text-lg md:text-2xl text-[#2AD883] font-bold text-center'>
+            {lang === 'english' ? 'Projects' : 'Projets'}
+            </motion.h2>
             <motion.div
             
             initial={{ opacity: 0, y: 50 }}
@@ -61,7 +64,7 @@ function Projects() {
                               <CardProjects
                                   imageUrl={project.imageUrl}
                                   title={project.title}
-                                  description={project.description}
+                                  description={lang === 'english' ? project.descriptionEnglish : project.descriptionFrench}
                                   link={project.link}
                                   stack={project.stack}
                               />

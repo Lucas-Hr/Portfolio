@@ -5,7 +5,10 @@ import React from 'react'
 import Image from 'next/image'
 import contactData from '@/data/ContactData'
 import { motion } from 'framer-motion';
+import { LangContext } from '@/context/LangContext';
+import { useContext } from 'react';
 const Contact = () => {
+  const { lang } = useContext(LangContext);
   return (
     <div className='bg-[#060606] px-10 md:px-30 py-20' id='contact'>
         <motion.h2 
@@ -13,7 +16,9 @@ const Contact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className='text-lg  md:text-2xl text-[#2AD883] font-bold'>Contact me</motion.h2>
+        className='text-lg  md:text-2xl text-[#2AD883] font-bold'>
+            {lang === 'english' ? 'Contact me' : 'Contactez-moi'}
+        </motion.h2>
         <div className='flex flex-col justify-between'>
             <motion.div 
             initial={{ opacity: 0, y: 50 }}
