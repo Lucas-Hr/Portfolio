@@ -59,11 +59,11 @@ function AboutMe() {
                 <p className='text-[#686868] text-sm md:text-sm text-justify'>
                  {
                   lang === 'english' ? <>I am currently an IT student at the Institut Supérieur Polytechnique de Madagascar, where I study a wide range of subjects in computer science, including web development, advanced algorithms, artificial intelligence, electronics, and mathematics.
-My main focus is web development, a field where I discovered my passion. I have already worked on several websites with my teammates as part of academic projects, and I’ve also built personal projects that reflect my strong interest in this area.
+My main focus is web development, a field where I discovered my passion. I have already worked on several websites with my teammates as part of academic projects, and I&apos;ve also built personal projects that reflect my strong interest in this area.
                  </> :
-                  <>Je suis actuellement étudiant en informatique à l'Institut Supérieur Polytechnique de Madagascar, où j’étudie divers domaines de l’informatique, notamment le développement web, les algorithmes avancés, l’intelligence artificielle, l’électronique et les mathématiques.
+                  <>Je suis actuellement étudiant en informatique à l'Institut Supérieur Polytechnique de Madagascar, où j&apos;étudie divers domaines de l&apos;informatique, notamment le développement web, les algorithmes avancés, l&apos;intelligence artificielle, l&apos;électronique et les mathématiques.
 
-                  Je me spécialise principalement dans le développement web, un domaine dans lequel j’ai découvert ma passion. J’ai déjà réalisé plusieurs sites web avec mes coéquipiers dans le cadre de projets académiques, et j’ai également mené des projets personnels qui témoignent de mon intérêt pour ce domaine.
+                  Je me spécialise principalement dans le développement web, un domaine dans lequel j&apos;ai découvert ma passion. J&apos;ai déjà réalisé plusieurs sites web avec mes coéquipiers dans le cadre de projets académiques, et j&apos;ai également mené des projets personnels qui témoignent de mon intérêt pour ce domaine.
                   </>
                   }
                 </p>
