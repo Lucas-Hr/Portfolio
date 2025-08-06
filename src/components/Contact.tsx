@@ -30,7 +30,14 @@ const Contact = () => {
                 return(
                     <div className='flex items-center mt-4' key={index}>
                         <Image src={c.imageUrl} width={20} height={20} alt='icon'/>
-                        <p className='ms-2 text-white'>{c.title}</p>
+                        {/* {
+                            c.title === 'lucashenintsoarandriamiarisoa@gmail.com' ? 
+                            <a href='mailto:lucashenintsoarandriamiarisoa@gmail.com' className='ms-2 text-white' target='_blank'>{c.title}</a> : 
+                            <p className='ms-2 text-white'>{c.title}</p>
+                        } */}
+                        {c.title === '+261 32 29 135 37' && (window.innerWidth > 1024 ? <a href='https://wa.me/261322913537' className='ms-2 text-white cursor-pointer hover:underline' target='_blank'>{c.title}</a> : <a href='tel:261322913537' className='ms-2 text-white hover:underline' target='_blank'>{c.title}</a>)}
+                        {c.title === 'lucashenintsoarandriamiarisoa@gmail.com' && <a href='mailto:lucashenintsoarandriamiarisoa@gmail.com' className='ms-2 text-white cursor-pointer hover:underline' target='_blank'>{c.title}</a>}
+                        {c.title === 'II N 59 RD Analamahitsy' && <p className='ms-2 text-white'>{c.title}</p>}
                     </div>
                 )
             })}

@@ -76,7 +76,7 @@ My main focus is web development, a field where I discovered my passion. I have 
               className='mt-6'>
                 <h3 className='text-md text-white font-bold md:text-lg'>
                   {
-                    lang === 'english' ? <>What do I do?</> : <>Que fais-je?</>
+                    lang === 'english' ? <>What do I do?</> : <>Ce que je fais?</>
                   }
                 </h3>
                 <p className='text-[#686868] text-sm md:text-sm text-justify'>
@@ -95,7 +95,7 @@ My main focus is web development, a field where I discovered my passion. I have 
             className='text-sm bg-[#2AD883] text-black px-4 py-2 rounded-md cursor-pointer mt-4 flex items-center hover:bg-[#1f9b6c] transition-colors' onClick={() => downloadCV()}>
               <Image src='/download.svg' alt='downloadCV' width={20} height={20}/>
               {
-                lang === 'english' ? <span className='ms-2 '>Download my CV</span> : <span className='ms-2 '>Télécharger mon CV</span>
+                lang === 'english' ? <span className='ms-2 '>Download my Resume</span> : <span className='ms-2 '>Télécharger mon CV</span>
               }
               
             </motion.button>

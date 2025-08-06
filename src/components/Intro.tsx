@@ -1,5 +1,5 @@
 'use client'
-
+import { Button } from '@react-email/components'
 import React ,{useContext} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -53,11 +53,15 @@ const Intro = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 1}}
             className='flex items-center justify-evenly mt-6 md:justify-start'>
-              <button className='text-sm bg-[#2AD883] text-black py-2 px-4 rounded-md cursor-pointer hover:bg-[#1f9b6c] transition-colors'>
-                {
+                <Button
+                  href="mailto:lucashenintsoarandriamiarisoa@gmail.com"
+                  // style={{ color: "#61dafb", padding: "10px 20px" }}
+                  className='text-sm bg-[#2AD883] text-black py-2 px-4 rounded-md cursor-pointer hover:bg-[#1f9b6c] transition-colors'
+                >
+                  {
                   lang === 'english' ? <>Hire me!</> : <>Engagez-moi!</>
-                }
-                </button>
+                  }
+                </Button>
               <Link href="/#projects">
                 <button className=' text-sm border border-[#2AD883] text-[#2AD883] px-4 py-2 rounded-md cursor-pointer md:ms-2'>
                   {lang === 'english' ? <>See my projects</> : <>Voir mes projets</>}
