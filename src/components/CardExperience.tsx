@@ -1,11 +1,11 @@
 'use client'
 import React from 'react'
 type ExperienceProps = {
-    title : String,
-    entreprise : String,
-    date : String,
-    description : String | null,
-    technologies : String[] | null,
+    title : string,
+    entreprise : string,
+    date : string,
+    description : string | null,
+    technologies : string[] | null,
 }
 
 const CardExperience = ({title, entreprise, date, description, technologies} : ExperienceProps) => {
