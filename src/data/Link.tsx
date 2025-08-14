@@ -10,9 +10,9 @@ const links = [
         nameFrench : 'À propos'
     },
     {
-        href : '/#services',
-        nameEnglish : 'Services',
-        nameFrench : 'Services'
+        href : '/#experience',
+        nameEnglish : 'Work Experience',
+        nameFrench : 'Expériences Professionnelles'
     },
     {
         href : '/#tools',
