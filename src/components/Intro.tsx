@@ -59,7 +59,7 @@ const Intro = () => {
                   className='text-sm bg-[#2AD883] text-black py-2 px-4 rounded-md cursor-pointer hover:bg-[#1f9b6c] transition-colors'
                 >
                   {
-                  lang === 'english' ? <>Hire me!</> : <>Engagez-moi!</>
+                  lang === 'english' ? <>Contact me!</> : <>Contactez-moi!</>
                   }
                 </Button>
               <Link href="/#projects">
