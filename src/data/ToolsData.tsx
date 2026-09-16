@@ -18,6 +18,8 @@ const tools = [
             { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
             { name: "Express.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
             { name: "Tailwind CSS", icon: "/tailwindcss.svg" },
+            { name : "Flutter", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" },
+            { name : "FlutterFlow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutterflow/flutterflow-original.svg" }
         ]
     },
     {
@@ -25,6 +27,7 @@ const tools = [
         items : [
             { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
             { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+            { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
         ]
     },
     {

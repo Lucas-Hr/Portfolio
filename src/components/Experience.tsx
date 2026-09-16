@@ -24,8 +24,7 @@ const Experience = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className='flex flex-col md:flex-row mt-10'
-            >
+            className='grid grid-cols-1 md:grid-cols-2 gap-4 mt-6'>
               
                   {
                       experienceData.map((experience, index) => (
