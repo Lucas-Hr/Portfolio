@@ -52,7 +52,7 @@ const Intro = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 1}}
-            className='flex items-center justify-evenly mt-6 md:justify-start'>
+            className='flex items-center justify-evenly mt-6 md:justify-start gap-2'>
                 <Button
                   href="mailto:lucashenintsoarandriamiarisoa@gmail.com"
                   // style={{ color: "#61dafb", padding: "10px 20px" }}

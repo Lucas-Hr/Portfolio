@@ -1,19 +1,27 @@
 const projectsData = [
     {
-        imageUrl: '/FoodDelivery.svg',
-        title: 'Food Delivery',
-        descriptionEnglish: 'Food Delivery is an app that let you order foods from anywhere.',
-        descriptionFrench : 'Food Delivery est une application qui vous permet de commander des aliments de n\'importe où.',
-        stack : 'React.js, TailwindCSS, Express.js, MongoDB',
-        link: 'https://github.com/Lucas-Hr/Food-Delivery.git'
-    },
-    {
         imageUrl: '/HarmonIA.svg',
         title: 'HarmonIA',
         descriptionEnglish: 'HarmonIA is an Artificial Intelligence that turns sheet music into song and vice-versa. This AI is dedicated for the musicians especially the begginers that are in difficult when playing sheet music.',
         descriptionFrench : 'HarmonIA est une intelligence artificielle qui transforme la partition en chanson et vice-versa. Cette IA est dédiée aux musiciens, en particulier aux débutants qui ont des difficultés à jouer la partition.',
         stack : 'Next.js, TailwindCSS, FlaskAPI, Python',
         link: 'https://github.com/Lucas-Hr/HarmonIA.git'
+    },
+    {
+        imageUrl: '/AgrisoilAI.jpg',
+        title: 'AgrisoilAI',
+        descriptionEnglish: 'AgrisoilAI is an embedded system that uses artificial intelligence to predict crops suitable for a soil analyzed by multiple sensors. It is dedicated to farmers who have difficulty knowing which crops are suitable for their soil.',
+        descriptionFrench : 'AgrisoilAI est un système embarqué qui utilise l\'intelligence artificielle afin de prédire les cultures adaptées à un sol analysé par plusieurs capteurs. Il est dédié aux agriculteurs qui ont des difficultés à savoir les cultures adaptées à leur sol.',
+        stack : 'Next.js, TailwindCSS, FastAPI, Python, Arduino, PostgreSQL, Supabase',
+        link: 'https://github.com/Lucas-Hr/AgriSoilAI-frontend.git'
+    },
+    {
+        imageUrl: '/FoodDelivery.svg',
+        title: 'Food Delivery',
+        descriptionEnglish: 'Food Delivery is an app that let you order foods from anywhere.',
+        descriptionFrench : 'Food Delivery est une application qui vous permet de commander des aliments de n\'importe où.',
+        stack : 'React.js, TailwindCSS, Express.js, MongoDB',
+        link: 'https://github.com/Lucas-Hr/Food-Delivery.git'
     },
     {
         imageUrl: '/Ekaly.svg',
