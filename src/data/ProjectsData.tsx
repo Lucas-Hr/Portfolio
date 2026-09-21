@@ -4,7 +4,7 @@ const projectsData = [
         title: 'HarmonIA',
         descriptionEnglish: 'HarmonIA is an Artificial Intelligence that turns sheet music into song and vice-versa. This AI is dedicated for the musicians especially the begginers that are in difficult when playing sheet music.',
         descriptionFrench : 'HarmonIA est une intelligence artificielle qui transforme la partition en chanson et vice-versa. Cette IA est dédiée aux musiciens, en particulier aux débutants qui ont des difficultés à jouer la partition.',
-        stack : 'Next.js, TailwindCSS, FlaskAPI, Python',
+        stack : 'Next.js, TailwindCSS, Flask, Python',
         link: 'https://github.com/Lucas-Hr/HarmonIA.git'
     },
     {

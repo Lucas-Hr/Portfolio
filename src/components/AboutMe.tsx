@@ -58,12 +58,9 @@ function AboutMe() {
                   </h3>
                 <p className='text-[#686868] text-sm md:text-sm text-justify'>
                  {
-                  lang === 'english' ? <>I am currently an IT student at the Institut Supérieur Polytechnique de Madagascar, where I study a wide range of subjects in computer science, including web development, advanced algorithms, artificial intelligence, electronics, and mathematics.
-My main focus is web development, a field where I discovered my passion. I have already worked on several websites with my teammates as part of academic projects, and I&apos;ve also built personal projects that reflect my strong interest in this area.
+                  lang === 'english' ? <>Passionate about web and mobile development, I am a developer with over a year of experience, particularly in the field of web and mobile development. I am currently pursuing a Master II in Computer Science and Telecommunications. I enjoy learning, experimenting, and taking on new challenges, with a particular interest in Artificial Intelligence and innovative technologies. My goal is to create useful and concrete solutions while continuing to develop my skills and evolve towards my career as an engineer.
                  </> :
-                  <>Je suis actuellement étudiant en informatique à l&apos;Institut Supérieur Polytechnique de Madagascar, où j&apos;étudie divers domaines de l&apos;informatique, notamment le développement web, les algorithmes avancés, l&apos;intelligence artificielle, l&apos;électronique et les mathématiques.
-
-                  Je me spécialise principalement dans le développement web, un domaine dans lequel j&apos;ai découvert ma passion. J&apos;ai déjà réalisé plusieurs sites web avec mes coéquipiers dans le cadre de projets académiques, et j&apos;ai également mené des projets personnels qui témoignent de mon intérêt pour ce domaine.
+                  <>Passionné par le développement web et mobile, je suis développeur avec plus d&apos;un an d&apos;expérience notemment dans le domaine du développement web et mobile, et je suis actuellement étudiant en Master II en Informatique et Télécommunications. J&apos;aime apprendre, expérimenter et relever de nouveaux défis, avec un intérêt particulier pour l&apos;Intelligence Artificielle et les technologies innovantes. Mon objectif est de créer des solutions utiles et concrètes tout en continuant à développer mes compétences et à évoluer vers mon métier d&apos;ingénieur.
                   </>
                   }
                 </p>
