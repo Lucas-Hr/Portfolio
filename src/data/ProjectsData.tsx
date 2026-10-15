@@ -13,7 +13,8 @@ const projectsData = [
         descriptionEnglish: 'AgrisoilAI is an embedded system that uses artificial intelligence to predict crops suitable for a soil analyzed by multiple sensors. It is dedicated to farmers who have difficulty knowing which crops are suitable for their soil.',
         descriptionFrench : 'AgrisoilAI est un système embarqué qui utilise l\'intelligence artificielle afin de prédire les cultures adaptées à un sol analysé par plusieurs capteurs. Il est dédié aux agriculteurs qui ont des difficultés à savoir les cultures adaptées à leur sol.',
         stack : 'Next.js, TailwindCSS, FastAPI, Python, Arduino, PostgreSQL, Supabase',
-        link: 'https://github.com/Lucas-Hr/AgriSoilAI-frontend.git'
+        link: 'https://github.com/Lucas-Hr/AgriSoilAI-frontend.git',
+        linkDribble : 'https://dribbble.com/shots/27811858-AgrisoilAI?new_shot_upload=true&utm_source=Clipboard_Shot&utm_campaign=lucas-henintsoa-randriamiariso&utm_content=AgrisoilAI&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=lucas-henintsoa-randriamiariso&utm_content=AgrisoilAI&utm_medium=Social_Share'
     },
     {
         imageUrl: '/FoodDelivery.svg',
@@ -24,12 +25,13 @@ const projectsData = [
         link: 'https://github.com/Lucas-Hr/Food-Delivery.git'
     },
     {
-        imageUrl: '/Ekaly.svg',
+        imageUrl: '/E-kaly.png',
         title: 'E-Kaly',
         descriptionEnglish: 'E-Kaly is a mobile application used in a restaurant, by scanning QR Code costumers can order foods and indicate their table to the cooker,then the cooker receive their orders and the cashier can manage the total amount for each table .',
         descriptionFrench : 'E-Kaly est une application mobile utilisée dans un restaurant, en scannant le code QR, les clients peuvent commander des plats et indiquer leur table au cuisinier, puis le cuisinier reçoit leurs commandes et le caissier peut gérer le montant total pour chaque table.',
         stack : 'React Native, Express.js, MongoDB',
-        link: 'https://github.com/Lucas-Hr/E-Kaly.git'
+        link: 'https://github.com/Lucas-Hr/E-Kaly.git',
+        linkDribble : 'https://dribbble.com/shots/27811732-E-kaly-mobile-app?utm_source=Clipboard_Shot&utm_campaign=lucas-henintsoa-randriamiariso&utm_content=E-kaly%20mobile%20app&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=lucas-henintsoa-randriamiariso&utm_content=E-kaly%20mobile%20app&utm_medium=Social_Share',
     },
     {
         imageUrl: '/E-game.svg',
@@ -38,6 +40,13 @@ const projectsData = [
         descriptionFrench : 'E-Game est un réseau social dédié aux joueurs. Les utilisateurs peuvent publier (photos, vidéos ou simplement un texte), commenter les publications des autres et y réagir, et ils peuvent également répondre à un commentaire. Enfin, ils peuvent discuter avec les autres utilisateurs.',
         stack : 'HTML, CSS, JavaScript, PHP, MySQL',
         link: 'https://github.com/Lucas-Hr/E-Game.git'
+    },
+    {
+        imageUrl: '/inbox.png',
+        title: 'Refonte Inbox.mg',
+        descriptionEnglish: "Inbox.mg is an e-commerce website that sells bottles online.",
+        descriptionFrench : 'Inbox.mg est un site e-commerce qui vend des bouteilles en ligne.',
+        linkDribble : 'https://dribbble.com/shots/27811811-Refonte-Inbox-mg?new_shot_upload=true&utm_source=Clipboard_Shot&utm_campaign=lucas-henintsoa-randriamiariso&utm_content=Refonte%20Inbox.mg&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=lucas-henintsoa-randriamiariso&utm_content=Refonte%20Inbox.mg&utm_medium=Social_Share',
     },
 
 ]
