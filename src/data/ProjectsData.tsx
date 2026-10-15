@@ -48,6 +48,13 @@ const projectsData = [
         descriptionFrench : 'Inbox.mg est un site e-commerce qui vend des bouteilles en ligne.',
         linkDribble : 'https://dribbble.com/shots/27811811-Refonte-Inbox-mg?new_shot_upload=true&utm_source=Clipboard_Shot&utm_campaign=lucas-henintsoa-randriamiariso&utm_content=Refonte%20Inbox.mg&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=lucas-henintsoa-randriamiariso&utm_content=Refonte%20Inbox.mg&utm_medium=Social_Share',
     },
+    {
+        imageUrl: '/bio.png',
+        title: 'Bio Madagascar',
+        descriptionEnglish: "Bio Madagascar is an e-commerce website that sells organic products online.",
+        descriptionFrench : 'Bio Madagascar est un site e-commerce qui vend des produits organiques en ligne.',
+        linkDribble : 'https://dribbble.com/shots/27811967-BIO-Madagascar?new_shot_upload=true&utm_source=Clipboard_Shot&utm_campaign=lucas-henintsoa-randriamiariso&utm_content=BIO%20Madagascar&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=lucas-henintsoa-randriamiariso&utm_content=BIO%20Madagascar&utm_medium=Social_Share',
+    },
 
 ]
 
