@@ -65,8 +65,9 @@ function Projects() {
                                   imageUrl={project.imageUrl}
                                   title={project.title}
                                   description={lang === 'english' ? project.descriptionEnglish : project.descriptionFrench}
-                                  link={project.link}
-                                  stack={project.stack}
+                                  link={project.link ?? ''}
+                                  linkDribble={project.linkDribble ?? ''}
+                                  stack={project.stack ?? ''}
                               />
                           </SwiperSlide>
                       ))

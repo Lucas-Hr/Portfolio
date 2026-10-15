@@ -21,14 +21,14 @@ const Intro = () => {
                 I&apos;m <span className='font-bold'>
                     <span className='text-[#2AD883]'>Lucas</span> Henintsoa Randriamiarisoa
                   </span>, <br />
-                a <span className='text-[#2AD883] font-bold'>Fullstack JavaScript Developer</span> 
+                a <span className='text-[#2AD883] font-bold'>UI/UX desginer - Web/Mobile Developer</span> 
                 </>
              ) : (
                 <>
                Je suis <span className='font-bold'>
                     <span className='text-[#2AD883]'>Lucas</span> Henintsoa Randriamiarisoa
                   </span>, <br />
-                un <span className='text-[#2AD883] font-bold'>Développeur JavaScript Fullstack</span> 
+                un <span className='text-[#2AD883] font-bold'>Designer UI/UX - Développeur Web/Mobile</span> 
                 </>
              )}
             </motion.h1>
@@ -41,9 +41,9 @@ const Intro = () => {
                 {/* I design website user interface for you and turn them into website <br /> using <span className='text-[#2AD883]'>JavaScript </span>language and its framework. */}
                 {
                   lang === 'english' ? (
-                    <>I design user interfaces for websites and turn them into fully functional websites using JavaScript and its frameworks.</>
+                    <>I craft intuitive, visually engaging user interfaces and transform them into fully functional, responsive websites.</>
                   ) : (
-                    <>Je conçois des interfaces utilisateur pour des sites web et je les transforme en sites entièrement fonctionnels en utilisant JavaScript et ses frameworks.</>  
+                    <>Je conçois des interfaces utilisateur intuitives et visuellement attrayantes, puis les transforme en sites web entièrement fonctionnels et responsives.</>  
                   )
                 }
             </motion.h2>
